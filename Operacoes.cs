@@ -2,7 +2,7 @@ namespace Calculator
 {
     public class Operacoes
     {
-        public bool Menu()
+        public void Menu()
         {
             Console.Clear();
 
@@ -38,7 +38,8 @@ namespace Calculator
 
                 case 5:
                     Console.WriteLine("Programa Encerrado.");
-                    return false;
+                    System.Environment.Exit(0);
+                    break;
 
                 default:
                     Console.WriteLine("Opção Inválida.");
@@ -46,7 +47,6 @@ namespace Calculator
                     break;
             }
 
-            return true;
         }
         public void Somar()
         {

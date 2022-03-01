@@ -10,8 +10,7 @@ namespace Calculator
 
             while (true)
             {
-                if (operacoes.Menu() == false)
-                    break;
+                operacoes.Menu();
             }
         }
     }
